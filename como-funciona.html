@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeLocals</title>
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="libs/materialize/css/materialize.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="libs/materialize/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <header class="row m-3 d-flex align-items-center">
+        <div class="col s4">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo-beelocals" width="120" height="96">
+            </a>
+        </div>
+        <div class="col s8 center">
+            <p class="cocon-titulo m-0">Live like a local</p>
+        </div>
+        <div class="col s4 hide-on-small-only"></div>
+    </header>
+
+    <nav class="bg-primary bg-gradient z-depth-3">
+        <ul class="d-flex justify-content-center">
+            <li class="mx-2 px-1"><a href="perfil-sitter.html" class="raleway-uppercase nav-text">House-sitters</a></li>
+            <li class="mx-2 px-1"><a href="perfil-owner.html" class="raleway-uppercase nav-text">Home-owners</a></li>
+            <li class="mx-2 px-1"><a href="como-funciona.html" class="raleway-uppercase nav-text">Cómo funciona</a>
+            </li>
+            <li class="mx-2 px-1"><a href="registro.html" class="raleway-uppercase nav-text">Registrarse</a></li>
+            <li class="mx-2 px-1"><a href="inicio-sesion.html" class="raleway-uppercase nav-text">Iniciar sesión</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="house-sitter container-fluid">
+
+            <h1 class="cocon-titulo text-center my-5 pt-4 mb-5">Pasos para convertirse en house-sitter</h1>
+
+        <div class="row">
+                <div class="house-sitter columnas col s3 p-5 d-flex flex-column align-items-center card m-4">
+                    <div class="house-sitter icono mb-4">
+                        <img src="images/icons/escribir 1.svg" alt="escribir 1" width="110" height="110">
+                    </div>
+    
+                    <div class="house-sitter texto m-4">
+                        <div class="d-flex align-items-start">
+                            <img src="images/icons/Group 1.svg" alt="" width="35">
+                            <p class="raleway-normal m-0 ms-2">Conviértase en miembro y cree su perfil</p>
+                        </div>
+                        <p class="raleway-small text-dark mt-3">Regístrese como house-sitter, luego inicie sesión en su página de inicio personal. 
+                            Se le pedirá contratar una membresía. Desde aquí, puede personalizar todo su perfil 
+                            y preferencias. Los propietarios de viviendas pueden contactarlo directamente.</p>
+                    </div>
+                </div>
+
+
+            <div class="house-sitter columnas col s3 p-5 d-flex flex-column align-items-center card m-4">
+                <div class="house-sitter icono mb-4">
+                    <img src="images/icons/busqueda-de-casa 1.svg" alt="busqueda-de-casa 1" width="110" height="110">
+                </div>
+
+                <div class="house-sitter texto m-4">
+                    <div class="d-flex align-items-start">
+                        <img src="images/icons/Group 2.svg" alt="" width="35">
+                        <p class="raleway-normal m-0 ms-2">Buscar asignaciones de sesión de la casa</p>
+                    </div>
+                    <p class="raleway-small text-dark mt-3">Busque en nuestra base de datos asignaciones de cuidado de la casa. 
+                        Póngase en contacto con los propietarios de viviendas por correo 
+                        electrónico a través de nuestro sitio y véndase como la persona adecuada 
+                        para el trabajo.</p>
+                </div>
+
+            </div>
+            <div class="house-sitter columnas col s3 p-5 d-flex flex-column align-items-center card m-4">
+                <div class="house-sitter icono mb-4">
+                    <img src="images/icons/firma-de-contrato 1.svg" alt="firma-de-contrato 1" width="110" height="110">
+                </div>
+
+                <div class="house-sitter texto m-4">
+                    <div class="d-flex align-items-center">
+                        <img src="images/icons/Group 3.svg" alt="" width="35">
+                        <p class="raleway-normal m-0 ms-2">Finaliza el trato</p>
+                    </div>
+                    <p class="raleway-small text-dark mt-4">Utilice los formularios de muestra y la información de nuestro centro de asesoramiento 
+                        para ayudar a que todo el proceso funcione sin problemas. 
+                        Por último, complete los formularios requeridos de verificación con los términos y condiciones.</p>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" id="continuar"
+                class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light m-4 p-0"
+                data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 20%;">Encuentra una casa</button>
+            </div>
+        </div>
+
+        </section>
+
+        <hr class="featurette-divider my-5 m-auto" style="width: 50%">
+
+        <section class="home-owner">
+
+            <h2 class="cocon-titulo text-center my-5 pt-4 mb-5">Pasos para convertirse en home-owner</h2>
+
+            <div class="row">
+                <div class="home-owner columnas col s3 p-5 d-flex flex-column align-items-center card m-4">
+                    <div class="home-owner icono mb-4">
+                        <img src="images/icons/escribir 1.svg" alt="escribir 1" width="110" height="110">
+                    </div>
+    
+                    <div class="home-owner texto m-4">
+                        <div class="d-flex align-items-start">
+                            <img src="images/icons/Group 1.svg" alt="" width="35">
+                            <p class="raleway-normal m-0 ms-2">Conviértase en miembro y cree su perfil de casa</p>
+                        </div>
+                        <p class="raleway-small text-dark mt-3">Regístrese como home-owner, luego inicie sesión en su 
+                            página de inicio personal. Desde aquí puede personalizar los requerimientos de la casa y sus 
+                            preferencias. Los house-sitters interesados les enviaran una solicitud de reserva.</p>
+                    </div>
+                </div>
+
+            <div class="home-owner columnas col s3 p-5 d-flex flex-column align-items-center card m-4">
+                <div class="home-owner icono mb-4">
+                    <img src="images/icons/buscando-a-una-persona 1.svg" alt="busqueda-de-casa 1" width="110" height="110">
+                </div>
+
+                <div class="home-owner texto m-4">
+                    <div class="d-flex align-items-start">
+                        <img src="images/icons/Group 2.svg" alt="" width="35">
+                        <p class="raleway-normal m-0 ms-2">Busca la persona ideal para su casa</p>
+                    </div>
+                    <p class="raleway-small text-dark mt-3">Busca los perfiles adecuados con tus preferencias en la lista 
+                        de los house sitters. Puede contactarlos a través de su correo electrónico.</p>
+                </div>
+
+            </div>
+            <div class="home-owner columnas col s3 p-5 d-flex flex-column align-items-center card m-4">
+                <div class="home-owner icono mb-4">
+                    <img src="images/icons/firma-de-contrato 1.svg" alt="firma-de-contrato 1" width="110" height="110">
+                </div>
+
+                <div class="home-owner texto m-4">
+                    <div class="d-flex align-items-center">
+                        <img src="images/icons/Group 3.svg" alt="" width="35">
+                        <p class="raleway-normal m-0 ms-2">Finaliza el trato</p>
+                    </div>
+                    <p class="raleway-small text-dark mt-4">Utilice los formularios de muestra y la información de nuestro 
+                        Centro de asesoramiento para ayudar a que todo el proceso funcione sin problemas. Por último 
+                        complete los formularios requeridos de verificación con los términos y condiciones.</p>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" id="continuar"
+                class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light m-4 p-0"
+                data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 20%;">Encuentra un cuidador</button>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="conocenos">
+
+            <h3 class="cocon-titulo text-center my-5 pt-4 mb-5">Conocenos un poco más</h3>
+                
+            <div class="m-auto container row d-flex flex-row justify-content-between card mb-5" style="width: 950px;">
+                <article class="my-3 mb-4 col-6 p-0" style="width: 400px;">
+                    <img class="z-depth-3" src="images/descarga 1.jpg" alt="hombre-con-perro" width="450" height="350">
+                </article>
+                <article class="my-3 mb-4 raleway-normal col-6 d-flex flex-column justify-content-between p-0"
+                    style="width: 400px;">
+                    <div class="d-flex">
+                        <p class="mb-0 ms-3 p-3 text-center">
+                            Nuestra comunidad de amantes de las mascotas se ayuda mutuamente ofreciendo cuidado 
+                            ilimitado de mascotas y del hogar a cambio de un lugar gratuito para quedarse. 
+                            Los dueños de mascotas pueden viajar con confianza sabiendo que han asegurado la mejor 
+                            atención para su mejor amigo. Mientras que los cuidadores se quedan en casas únicas en 
+                            todo el mundo y disfrutan de la compañía de las mascotas. Es beneficioso para todos... 
+                            ¡Especialmente para las mascotas!
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="row p-5 m-0 bg-primary bg-gradient mt-5" style="width: 100%;">
+        <div class="col mb-3">
+            <p class="raleway-bold">House-sitters</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra a un
+                        cuidador</a></li>
+                <li class="nav-item mb-2"><a href="registro.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Home-owners</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra una casa</a>
+                </li>
+                <li class="nav-item mb-2"><a href="registro.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Ayuda</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="como-funciona.html" class="nav-link p-0 text-dark">Cómo funciona</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Descubre más</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Opiniones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Experiencias</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3 d-flex flex-column align-items-start">
+            <p class="raleway-bold">Contáctenos</p>
+            <div class="d-flex justify-content-between">
+                <a href="https://www.instagram.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/instagram.svg" alt="" width="30" height="30"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="me-4 zoom" src="images/icons/twitter.svg"
+                        alt="" width="30" height="30"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/facebook.png" alt="" width="30" height="30"></a>
+            </div>
+            <div class="d-flex align-items-center my-3">
+                <img src="images/icons/email.svg" alt="" width="30" height="30">
+                <a class="ms-2 raleway-normal text-decoration-underline email"
+                    href="mailto:beelocals@hotmail.com?Subject=Consulta%20sobre%20House-sitting">Beelocals@hotmail.com</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

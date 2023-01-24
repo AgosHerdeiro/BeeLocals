@@ -1,0 +1,30 @@
+$principal: #F5A426;
+$secundario: #F5D6A6;
+$oscuro: #000000;
+$claro: #FFFFFF;
+
+$primary: $principal;
+$secondary: $secundario;
+$dark: $oscuro;
+$light: $claro;
+/*
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-border-radius: 1rem;
+$btn-padding-y: 0px;
+$btn-padding-x: 30px;
+$btn-font-size: 15px;
+*/
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+/*
+.btn {
+    border-bottom: 3px solid rgba(0, 0, 0, 25%);
+}
+*/
+
+a:hover {
+    color: currentColor;
+}
+

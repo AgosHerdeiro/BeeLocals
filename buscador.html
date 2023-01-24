@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeLocals</title>
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="libs/materialize/css/materialize.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="stylesheet" href="css/estilos3.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="libs/materialize/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <header class="row m-3 d-flex align-items-center">
+        <div class="col s4">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo-beelocals" width="120" height="96">
+            </a>
+        </div>
+        <div class="col s8 center">
+            <p class="cocon-titulo m-0">Live like a local</p>
+        </div>
+        <div class="col s4 hide-on-small-only"></div>
+    </header>
+
+    <nav class="bg-primary bg-gradient navbar p-0 d-flex justify-content-between">
+        <div style="width: 350px;">
+            <ul class="d-flex justify-content-start">
+                <li>
+                    <a data-activates="slide-out" class="button-collapse"></a>
+                    <a data-activates="slide-out" class="menu-des"><img src="images//icons/menu.svg" alt="" width="20"
+                            height="20" class="mx-3"></a>
+                </li>
+                <li>
+                    <a href="buscador.html"><img src="images/icons/house.svg" alt="" width="20" height="20"
+                            class="mx-3"></a>
+                </li>
+            </ul>
+        </div>
+        <div style="width: 350px;">
+            <form action="#" method="post" class="raleway-normal">
+                <div class="input-wrapper">
+                    <a><img src="images/icons/search.svg" alt="" width="20" height="20" class="icon-izq mx-2"></a>
+                    <input type="text" class="form-control input-icon ps-5" placeholder="¿A dónde quieres ir?"
+                        style="border-radius: 11px;">
+                    <a href="buscador.html"><img src="images/icons/filter.svg" alt="" width="20" height="20"
+                            class="icon-der mx-2"></a>
+                </div>
+            </form>
+        </div>
+        <div style="width: 350px;">
+            <ul class="d-flex justify-content-end">
+                <li id="notif">
+                    <a class="dropdown-button position-relative" data-beloworigin="true" data-activates='dropdown1'>
+                        <img src="images/icons/notif.svg" alt="" width="20" height="20" class="mx-3">
+                        <span id="bola" class="position-absolute translate-middle bg-danger border border-light rounded-circle"
+                            style="left: 60%;
+                            top: 40%; padding: 5px;">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="images/icons/heart.svg" alt="" width="20" height="20" class="mx-3"></a>
+                </li>
+                <li>
+                    <a class="dropdown-button" data-beloworigin="true" data-activates='dropdown2'>
+                        <img src="images/icons/profile-pic.svg" alt="" width="20" height="20" class="mx-3">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="raleway-normal">
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <div class="user-view d-flex justify-content-center align-items-center py-5 px-2">
+                    <div class="background bg-secondary bg-gradient"></div>
+                    <img src="images/logo.png" width="120" height="96">
+                    <p class="cocon-small">Live like a local</p>
+                </div>
+            </li>
+            <li class="waves-effect" style="width: 100%;"><a href="perfil-sitter.html">House-sitters</a></li>
+            <li class="waves-effect" style="width: 100%;"><a href="perfil-owner.html">Home-owners</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">Ayuda</a></li>
+            <li class="waves-effect" style="width: 100%;"><a href="como-funciona.html">Cómo funciona</a></li>
+            <li class="waves-effect" style="width: 100%;"><a>Preguntas frecuentes</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">Comunidad</a></li>
+            <li class="waves-effect" style="width: 100%;"><a>Blog</a></li>
+            <li class="waves-effect" style="width: 100%;"><a>Opiniones</a></li>
+            <li class="waves-effect" style="width: 100%;"><a>Experiencias</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul id='dropdown1' class='dropdown-content z-depth-3 borde'>
+            <li class="raleway-bold-medium d-flex align-items-center ps-3">Notificaciones</li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" class="d-flex align-items-center waves-effect">
+                    <div class="preview-thumbnail">
+                        <img src="images/icons/achievement.svg" alt="" class="me-3">
+                    </div>
+                    <div>
+                        <p class="raleway-bold-medium mb-1">¡Te damos la bienvenida!</p>
+                        <p class="raleway-small mb-0">Ahora eres usuario de BeeLocals</p>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li class="raleway-bold-medium d-flex justify-content-center align-items-center">1 Notificación</li>
+        </ul>
+    </div>
+
+    <div>
+        <ul id='dropdown2' class='dropdown-content z-depth-3 borde'>
+            <li class="d-flex pt-4">
+                <div>
+                    <img class="circle mx-4" src="images/profile-1.jpg" width="50" height="50">
+                </div>
+                <div class="d-flex flex-column justify-content-between align-items-center">
+                    <span class="raleway-normal text-dark px-2">Sofía Becerra</span>
+                    <span class="raleway-small px-2" style="font-size: medium;">House-sitter</span>
+                </div>
+            </li>
+            <li class="d-flex align-items-center ps-3">
+                <a href="perfil-owner.html"
+                    class="rounded-pill bg-secondary bg-gradient p-1 d-flex align-items-center justify-content-center raleway-small text-dark zoom"
+                    style="width: 85px; height: 25px">Ver perfil</a>
+            </li>
+            <li class="divider"></li>
+            <li class="raleway-bold-medium d-flex align-items-center ps-3 tam">Cuenta</li>
+            <a href="#">
+                <li class="raleway-small d-flex align-items-center tam und">Ajustes y privacidad</li>
+            </a>
+            <a href="como-funciona.html">
+                <li class="raleway-small d-flex align-items-center tam und">Ayuda</li>
+            </a>
+            <a href="#">
+                <li class="raleway-small d-flex align-items-center tam und">Idiomas</li>
+            </a>
+            <li class="divider"></li>
+            <a href="index.html">
+                <li class="raleway-small d-flex align-items-center tam und">Cerrar sesión</li>
+            </a>
+        </ul>
+    </div>
+
+
+
+    <main>
+        <section class="container-fluid">
+            <h2 class="raleway-bold px-5 pt-5" style="font-variant: small-caps;text-align: center;"> Busca tu hospedaje </h2>
+            <div class="d-flex flex-row align-items-start mb-5" style="padding-right: 15%;padding-left: 15%; ">
+                
+                <article class="bg-secondary bg-gradient ms-3 borde z-depth-3" style="width: 100%;">
+
+                    <div class="d-flex flex-row align-items-center container-fluid">
+
+                        <div class="m-3">                            
+                        </div>
+
+                        <div class="m-3">                                                       
+                        </div>
+
+                    </div>
+
+                    <div class="px-3">
+                        <div class="d-flex" style="margin-left: 15%; margin-right: 15%;">
+                            
+                            <div class=" align-items-center pe-4 border-end border-dark"style="height: fit-content;">
+
+                                <p class="m-0 raleway-bold" style="font-variant: small-caps;">¿A dónde quieres ir? <br>
+    
+                                <p class="raleway-small text-dark mb-0">Explora las formas cotidianas de vivir en otros lugares</p>
+
+                                <div class="input-field col s12 m6">
+                                    <select class="icons">
+                                      <option value="" disabled selected>Seleccione un lugar</option>
+                                      <option value="" data-icon="images/image-12.png" class="left circle">L.A. California</option>
+                                      <option value="" data-icon="images/image-13.png" class="left circle">Paris, Francia</option>
+                                      <option value="" data-icon="images/image-14.png" class="left circle">Cancún, Mexico</option>
+                                      <option value="" data-icon="images/image-15.png" class="left circle">Renne, Francia</option>
+                                      <option value="" data-icon="images/image-19.png" class="left circle">Madrid, España</option>
+                                      <option value="" data-icon="images/image-20.png" class="left circle">Melbourne, Australia</option>
+                                    </select>
+                                    
+                                </div>
+                                
+                            </div>
+                            <section>
+                             <div style="height: fit-content;">
+                                <p class="m-0 raleway-bold" style="font-variant: small-caps;text-align: center;">Elija las Fechas (opcional)</p>
+                                
+                                <section class="d-flex" style="padding-left: 10%;">
+                                    <div class="align-items-center pe-4 border-end border-dark" style="margin:5% ;">
+                                        <div class="d-flex">
+                                            <img src="images/icons/calendar-2.svg" alt="" width="25" height="25"><p>desde</p>
+                                        </div>
+                                    <input type="text" class="datepicker" style="background-color: transparent;
+                                    border: none;
+                                    border-bottom: 1px solid #9e9e9e;
+                                    border-radius: 0;
+                                    outline: none;
+                                    height: 3rem;
+                                    width: 100%;
+                                     font-size: medium;
+                                    margin: 0 0 20px 0;
+                                    padding: 0;
+                                    -webkit-box-shadow: none;
+                                    box-shadow: none;
+                                    -webkit-box-sizing: content-box;
+                                    box-sizing: content-box;
+                                    -webkit-transition: all 0.3s;
+                                    transition: all 0.3s;">
+                                    </div>
+
+                                    <div class="align-items-center pe-4 " style="margin:5% ;">
+                                        <div class="d-flex">
+                                            <img src="images/icons/calendar-2.svg" alt="" width="25" height="25"><p>hasta</p>
+                                        </div>
+                                    <input type="text" class="datepicker" style="background-color: transparent;
+                                    border: none;
+                                    border-bottom: 1px solid #9e9e9e;
+                                    border-radius: 0;
+                                    outline: none;
+                                    height: 3rem;
+                                    width: 100%;
+                                     font-size: medium;
+                                    margin: 0 0 20px 0;
+                                    padding: 0;
+                                    -webkit-box-shadow: none;
+                                    box-shadow: none;
+                                    -webkit-box-sizing: content-box;
+                                    box-sizing: content-box;
+                                    -webkit-transition: all 0.3s;
+                                    transition: all 0.3s;">
+                                    </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="d-flex flex-row align-items-center container-fluid">
+
+                                <div class="m-3">                            
+                                </div>
+        
+                                <div class="m-3">                                                       
+                                </div>
+        
+                            </div>
+                                
+                            </div>
+                            </section>
+                            
+                        </div>
+                                            
+                    </div>
+
+                   
+                    
+                </article>
+            </div>
+        </section>
+        
+        <h2 class="raleway-bold px-5 pt-5" style="font-variant: small-caps;text-align: center;" >Resultados de la busqueda</h2>
+        <section class="m-auto mt-5 container row d-flex flex-row justify-content-between card" style="width: 970px;">
+            
+            <section class="d-flex"> 
+
+                <div class="card" style="margin: 1%;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/image-12.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="activator grey-text text-darken-4 btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons right">add</i></span>
+                      <p><a href="#">L.A, California</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>02/08/2022 - 16/08/2022</span>
+                      <section>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/question 1.svg" alt="" width="25" height="25">
+                            <p>razón</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/dance-floor 1.svg" alt="" width="25" height="25">
+                            <p>piso</p>
+                        </div>
+                        </div>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/plot 1.svg" alt="" width="25" height="25">
+                            <p>tierra</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/perro 3.svg" alt="" width="25" height="25">
+                            <p>animales</p>
+                        </div>
+                        </div>
+                        <div>
+                            <img src="images/icons/bus 1.svg" alt="" width="25" height="25">
+                            <p>transportes</p>
+                        </div>
+                        </section>
+                    </div>
+                  </div>
+            
+                  <div class="card" style="margin: 1%;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/image-13.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="activator grey-text text-darken-4 btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons right">add</i></span>
+                      <p><a href="#">París, Francia</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>02/08/2022 - 16/08/2022</span>
+                      <section>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/question 1.svg" alt="" width="25" height="25">
+                            <p>razón</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/dance-floor 1.svg" alt="" width="25" height="25">
+                            <p>piso</p>
+                        </div>
+                        </div>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/plot 1.svg" alt="" width="25" height="25">
+                            <p>tierra</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/perro 3.svg" alt="" width="25" height="25">
+                            <p>animales</p>
+                        </div>
+                        </div>
+                        <div>
+                            <img src="images/icons/bus 1.svg" alt="" width="25" height="25">
+                            <p>transportes</p>
+                        </div>
+                        </section>
+                    </div>
+                  </div>
+
+              <div class="card" style="margin: 1%;">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/image-19.png">
+                </div>
+                <div class="card-content">
+                  <span class="activator grey-text text-darken-4 btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons right">add</i></span>
+                  <p><a href="#">Cancún, México</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>02/08/2022 - 16/08/2022</span>
+                  <section>
+                    <div class="d-flex">
+                    <div style="padding-right: 25px;">
+                        <img src="images/icons/question 1.svg" alt="" width="25" height="25">
+                        <p>razón</p>
+                    </div>
+                    <div>
+                        <img src="images/icons/dance-floor 1.svg" alt="" width="25" height="25">
+                        <p>piso</p>
+                    </div>
+                    </div>
+                    <div class="d-flex">
+                    <div style="padding-right: 25px;">
+                        <img src="images/icons/plot 1.svg" alt="" width="25" height="25">
+                        <p>tierra</p>
+                    </div>
+                    <div>
+                        <img src="images/icons/perro 3.svg" alt="" width="25" height="25">
+                        <p>animales</p>
+                    </div>
+                    </div>
+                    <div>
+                        <img src="images/icons/bus 1.svg" alt="" width="25" height="25">
+                        <p>transportes</p>
+                    </div>
+                    </section>
+                </div>
+              </div>
+                               
+            </section>
+            <section class="d-flex">
+                
+                <div class="card" style="margin: 1%;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/image-14.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="activator grey-text text-darken-4 btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons right">add</i></span>
+                      <p><a href="#">Renne, Francia</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>02/08/2022 - 16/08/2022</span>
+                      <section>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/question 1.svg" alt="" width="25" height="25">
+                            <p>razón</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/dance-floor 1.svg" alt="" width="25" height="25">
+                            <p>piso</p>
+                        </div>
+                        </div>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/plot 1.svg" alt="" width="25" height="25">
+                            <p>tierra</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/perro 3.svg" alt="" width="25" height="25">
+                            <p>animales</p>
+                        </div>
+                        </div>
+                        <div>
+                            <img src="images/icons/bus 1.svg" alt="" width="25" height="25">
+                            <p>transportes</p>
+                        </div>
+                        </section>
+                    </div>
+                  </div>
+
+                  <div class="card" style="margin: 1%;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/image-20.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="activator grey-text text-darken-4 btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons right">add</i></span>
+                      <p><a href="#">Madrid, España</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>02/08/2022 - 16/08/2022</span>
+                      <section>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/question 1.svg" alt="" width="25" height="25">
+                            <p>razón</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/dance-floor 1.svg" alt="" width="25" height="25">
+                            <p>piso</p>
+                        </div>
+                        </div>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/plot 1.svg" alt="" width="25" height="25">
+                            <p>tierra</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/perro 3.svg" alt="" width="25" height="25">
+                            <p>animales</p>
+                        </div>
+                        </div>
+                        <div>
+                            <img src="images/icons/bus 1.svg" alt="" width="25" height="25">
+                            <p>transportes</p>
+                        </div>
+                        </section>
+                    </div>
+                  </div>
+
+                  <div class="card" style="margin: 1%;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/image-15.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="activator grey-text text-darken-4 btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons right">add</i></span>
+                      <p><a href="#">Melbourne, Australia</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>02/08/2022 - 16/08/2022</span>
+                      <section>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/question 1.svg" alt="" width="25" height="25">
+                            <p>razón</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/dance-floor 1.svg" alt="" width="25" height="25">
+                            <p>piso</p>
+                        </div>
+                        </div>
+                        <div class="d-flex">
+                        <div style="padding-right: 25px;">
+                            <img src="images/icons/plot 1.svg" alt="" width="25" height="25">
+                            <p>tierra</p>
+                        </div>
+                        <div>
+                            <img src="images/icons/perro 3.svg" alt="" width="25" height="25">
+                            <p>animales</p>
+                        </div>
+                        </div>
+                        <div>
+                            <img src="images/icons/bus 1.svg" alt="" width="25" height="25">
+                            <p>transportes</p>
+                        </div>
+                        </section>
+                    </div>
+                  </div>
+
+            </section> 
+
+            
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="row p-5 m-0 bg-primary bg-gradient mt-5" style="width: 100%;">
+        <div class="col mb-3">
+            <p class="raleway-bold">House-sitters</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra a un
+                        cuidador</a></li>
+                <li class="nav-item mb-2"><a href="registro-sitter.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Home-owners</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra una casa</a>
+                </li>
+                <li class="nav-item mb-2"><a href="perfil-owner.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Ayuda</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="como-funciona.html" class="nav-link p-0 text-dark">Cómo funciona</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Descubre más</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Opiniones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Experiencias</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3 d-flex flex-column align-items-start">
+            <p class="raleway-bold">Contáctenos</p>
+            <div class="d-flex justify-content-between">
+                <a href="https://www.instagram.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/instagram.svg" alt="" width="30" height="30"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="me-4 zoom" src="images/icons/twitter.svg"
+                        alt="" width="30" height="30"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/facebook.png" alt="" width="30" height="30"></a>
+            </div>
+            <div class="d-flex align-items-center my-3">
+                <img src="images/icons/email.svg" alt="" width="30" height="30">
+                <a class="ms-2 raleway-normal text-decoration-underline email"
+                    href="mailto:beelocals@hotmail.com?Subject=Consulta%20sobre%20House-sitting">Beelocals@hotmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

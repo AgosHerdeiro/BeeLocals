@@ -1,0 +1,33 @@
+.input-wrapper {
+    position: relative;
+    width: 350px;
+}
+
+.input-icon {
+    padding-right: 2.5rem
+}
+
+.icon-izq {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.icon-der {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+#dropdown2 .tam {
+    min-height: 35px;
+}
+
+.und:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.87);
+}

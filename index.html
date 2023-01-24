@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeLocals</title>
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="libs/materialize/css/materialize.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="libs/materialize/js/materialize.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="row m-3 d-flex align-items-center">
+        <div class="col s4">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo-beelocals" width="120" height="96">
+            </a>
+        </div>
+        <div class="col s8 center">
+            <p class="cocon-titulo m-0">Live like a local</p>
+        </div>
+        <div class="col s4 hide-on-small-only"></div>
+    </header>
+
+    <nav class="bg-primary bg-gradient z-depth-3">
+        <ul class="d-flex justify-content-center">
+            <li class="mx-2 px-1"><a href="registro-sitter.html" class="raleway-uppercase nav-text">House-sitters</a></li>
+            <li class="mx-2 px-1"><a href="perfil-owner.html" class="raleway-uppercase nav-text">Home-owners</a></li>
+            <li class="mx-2 px-1"><a href="como-funciona.html" class="raleway-uppercase nav-text">Cómo funciona</a>
+            </li>
+            <li class="mx-2 px-1"><a href="registro-sitter.html" class="raleway-uppercase nav-text">Registrarse</a></li>
+            <li class="mx-2 px-1"><a class="raleway-uppercase nav-text">Iniciar sesión</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="portada d-flex flex-column justify-content-center z-depth-3">
+            <div class="p-4 texto-portada borde d-flex z-depth-3">
+                <p class="raleway-uppercase text-center m-auto" style="line-height: 35px;">
+                    Brindamos las herramientas en línea para que los propietarios de viviendas y los cuidadores de
+                    casas y mascotas se encuentren en todo el mundo
+                </p>
+            </div>
+        </div>
+
+        <section>
+            <h1 class="cocon-titulo text-center my-5 pt-4">¿Qué es el House-sitting?</h1>
+            <div class="m-auto container row d-flex flex-row justify-content-between card" style="width: 950px;">
+                <article class="my-3 mb-4 col-6 p-0" style="width: 400px;">
+                    <img class="z-depth-3 rounded" src="images/imagen-1.jpg" alt="hombre-con-perro" width="400"
+                        height="430">
+                </article>
+                <article class="my-3 mb-4 raleway-normal col-6 d-flex flex-column justify-content-between p-0"
+                    style="width: 400px;">
+                    <div class="d-flex">
+                        <img src="images/icons/house.svg" alt="casa" width="25" height="23">
+                        <p class="mb-0 ms-3">
+                            Es un sistema de intercambio donde se ponen en contacto personas cuyas necesidades se
+                            complementan
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex">
+                            <img src="images/icons/hand-holding-key.svg" alt="mano-sosteniendo-llave" width="25"
+                                height="25">
+                            <p class="mb-0 ms-3">
+                                Por un lado, propietarios de casas que se ausentan y necesitan a alguien que cuide de su
+                                casa
+                                y/o
+                                mascota
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="registro-owner.html"
+                                class="waves-effect waves-light btn mb-0 m-3 ms-5 bg-primary bg-gradient text-center raleway-bold borde">¡Quiero
+                                ser home-owner!</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex">
+                            <img src="images/icons/person-holding-luggage.svg" alt="persona-con-valija" width="25"
+                                height="25">
+                            <p class="m-0 ms-3">
+                                Y por el otro, viajeros dispuestos a ceder parte de su tiempo a cambio de alojamiento
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="registro.html"
+                                class="waves-effect waves-light btn mb-0 m-3 ms-5 bg-primary bg-gradient text-center raleway-bold borde">¡Quiero
+                                ser house-sitter!</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="m-auto mt-5 container row d-flex flex-row justify-content-between card" style="width: 950px;">
+            <article class="my-5 raleway-normal col-6 d-flex flex-column justify-content-between p-0"
+                style="width: 400px;">
+                <div class="d-flex">
+                    <img src="images/icons/flower.svg" alt="flores" width="25" height="25">
+                    <p class="mb-0 ms-3">
+                        Es la mejor manera de conocer nuevos lugares desde la perspectiva local en diferentes países y
+                        culturas y conocer gente con los mismos intereses alrededor del mundo
+                    </p>
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="d-flex">
+                        <img src="images/icons/shield.svg" alt="escudo" width="25" height="25">
+                        <p class="mb-0 ms-3">
+                            Garantiza un espacio seguro y tranquilo de trabajo
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="d-flex">
+                        <img src="images/icons/hands.svg" alt="manos" width="25" height="25">
+                        <p class="m-0 ms-3">
+                            Tanto los viajeros como propietarios, se ven beneficiados: los viajeros no deben gastar en
+                            alojamiento y los propietarios no deben pagar a alguien para que cuide de su mascota y de su
+                            hogar
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <a href="como-funciona.html"
+                            class="mb-0 m-3 ms-5 text-center raleway-normal text-dark text-decoration-underline">Descubre
+                            más
+                            aquí</a>
+                    </div>
+                </div>
+            </article>
+            <article class="my-5 col-6 p-0" style="width: 400px;">
+                <img class="z-depth-3 rounded" src="images/imagen-2.jpg" alt="hombre-con-perro" width="400"
+                    height="430">
+            </article>
+        </section>
+
+        <section class="mt-5">
+            <h1 class="cocon-titulo text-center m-0">Elige una casa y comience su próxima aventura</h1>
+            <p class="raleway-normal text-center m-auto my-3" style="width: 50%;">Disfrute de sus vacaciones en lugares
+                increíbles con las
+                comodidades de un hogar mientras cuida de hermosas mascotas</p>
+            <div class="d-flex justify-content-evenly align-items-center">
+                <div class="col-3 p-0" style="width: 290px;">
+                    <img class="shadow rounded" src="images/house-2.jpg" alt="casa" width="100%" height="100%"
+                        style="object-fit: cover;">
+                </div>
+                <div class="col-6 p-0" style="width: 400px;">
+                    <div class="my-4 col-3 p-0" style="width: 400px;">
+                        <img class="shadow rounded" src="images/house-1.jpg" alt="casa" width="100%" height="100%"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-3 p-0" style="width: 290px;">
+                    <img class="shadow rounded" src="images/house-3.jpg" alt="casa" width="100%" height="100%"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center raleway-normal">
+                <div>
+                    <div class="d-flex mb-4 align-items-center">
+                        <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                        <p class="mb-0 ms-3">
+                            Mar del Plata, Buenos Aires, Argentina
+                        </p>
+                    </div>
+                    <div class="d-flex mb-4 align-items-center">
+                        <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                        <p class="mb-0 ms-3">
+                            1
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a class="waves-effect waves-light btn mb-0 m-3 ms-5 bg-primary text-center raleway-bold">Explorar
+                            más propiedades</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="cocon-titulo text-center mt-5">Elige una casa y comience su próxima aventura</h1>
+            <p class="raleway-normal text-center m-auto my-3" style="width: 50%;">Disfrute de sus vacaciones en lugares
+                increíbles con las
+                comodidades de un hogar mientras cuida de hermosas mascotas</p>
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="carousel center-align" id="carousel">
+                            <div class="capa-1">
+                            </div>
+                            <a class="carousel-item active">
+                                <img class="z-depth-3 rounded" src="images/house-1.jpg" alt="casa">
+                                <div class="d-flex flex-column align-items-center raleway-normal mt-4" det>
+                                    <div>
+                                        <div class="d-flex mb-4 align-items-center">
+                                            <img src="images/icons/map.svg" alt="globo-mapa width=" 25" height="25">
+                                            <p class="mb-0 ms-3">
+                                                Mar del Plata, Buenos Aires, Argentina
+                                            </p>
+                                        </div>
+                                        <div class="d-flex mb-4 align-items-center">
+                                            <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                                            <p class="mb-0 ms-3">
+                                                1
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="carousel-item">
+                                <img class="z-depth-3 rounded" src="images/house-2.jpg" alt="casa">
+                                <div class="d-flex flex-column align-items-center raleway-normal mt-4" det>
+                                    <div>
+                                        <div class="d-flex mb-4 align-items-center">
+                                            <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                            <p class="mb-0 ms-3">
+                                                Los Angeles, California, Estados Unidos
+                                            </p>
+                                        </div>
+                                        <div class="d-flex mb-4 align-items-center">
+                                            <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                                            <p class="mb-0 ms-3">
+                                                3
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="carousel-item">
+                                <img class="z-depth-3 rounded" src="images/house-3.jpg" alt="casa">
+                                <div class="d-flex flex-column align-items-center raleway-normal mt-4" det>
+                                    <div>
+                                        <div class="d-flex mb-4 align-items-center">
+                                            <img src="images/icons/map.svg" alt="globo-mapa width=" 25" height="25">
+                                            <p class="mb-0 ms-3">
+                                                Getafe, Madrid, España
+                                            </p>
+                                        </div>
+                                        <div class="d-flex mb-4 align-items-center">
+                                            <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                                            <p class="mb-0 ms-3">
+                                                1
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="waves-effect waves-light btn bg-primary text-center raleway-bold">Explorar
+                                más
+                                propiedades</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <hr class="featurette-divider my-5">
+
+        <section>
+            <h1 class="cocon-titulo text-center m-0">Elige una casa y comience su próxima aventura</h1>
+            <p class="raleway-normal text-center m-auto my-3" style="width: 50%;">Disfrute de sus vacaciones en lugares
+                increíbles con las
+                comodidades de un hogar mientras cuida de hermosas mascotas</p>
+            <div class="carousel">
+                <a class="carousel-item" id="detalle1" href="perfil-owner.html">
+                    <img src="images/house-1.jpg" class="z-depth-3 rounded zoom" id="imagen1">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4" det>
+                        <div class="det1">
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Mar del Plata, Buenos Aires, Argentina
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" id="detalle2" href="perfil-owner.html">
+                    <img src="images/house-2.jpg" class="z-depth-3 rounded zoom" id="imagen2">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4" det>
+                        <div class="det2">
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Getafe, Madrid, España
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" id="detalle3" href="perfil-owner.html">
+                    <img src="images/house-3.jpg" class="z-depth-3 rounded zoom" id="imagen3">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4" det>
+                        <div class="det3">
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Costa di Baunei, Sardegna, Italia
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" id="detalle4" href="perfil-owner.html">
+                    <img src="images/house-4.jpg" class="z-depth-3 rounded zoom" id="imagen4">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4" det>
+                        <div class="det4">
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Melbourne, Australia
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" id="detalle5" href="perfil-owner.html">
+                    <img src="images/house-5.jpg" class="z-depth-3 rounded zoom" id="imagen5">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4" det>
+                        <div class="det5">
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Renne, Francia
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/paw.svg" alt="pata-animal" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a class="waves-effect waves-light btn bg-primary text-center raleway-bold bg-gradient borde"
+                    href="buscador.html">Explorar
+                    más propiedades</a>
+            </div>
+        </section>
+
+        <hr class="featurette-divider my-5">
+
+        <section>
+            <h1 class="cocon-titulo text-center m-0">Candidatos de sitters perfectos para vos</h1>
+            <p class="raleway-normal text-center m-auto my-3" style="width: 50%;">Encuentra al compañero perfecto para
+                tu
+                mascota y empieza a disfrutar de
+                tu viaje sin preocupaciones</p>
+            <div class="carousel container">
+                <a class="carousel-item" id="perfil1" style="width: 190px;" href="perfil-sitter.html">
+                    <img src="images/profile-1.jpg" class="rounded-circle z-depth-3" id="imagenUno">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column align-items-center raleway-normal mt-4"
+                            style="width: fit-content;">
+                            <div class="per1" style="width: max-content;">
+                                <div class="d-flex mb-4 justify-content-center align-items-center">
+                                    <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                    <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                    <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                    <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                    <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                </div>
+                                <div class="d-flex mb-4 align-items-center">
+                                    <img src="images/icons/person.svg" alt="persona" width="25" height="25">
+                                    <p class="mb-0 ms-3">
+                                        Sofía Becerra, 31 años
+                                    </p>
+                                </div>
+                                <div class="d-flex mb-4 align-items-center">
+                                    <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                    <p class="mb-0 ms-3">
+                                        Palermo, Buenos Aires, Argentina
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" id="perfil2" style="width: 190px;" href="perfil-sitter.html">
+                    <img src="images/profile-2.jpg" class="rounded-circle z-depth-3" id="imagenDos">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4">
+                        <div class="per2" style="width: max-content;">
+                            <div class="d-flex mb-4 justify-content-center align-items-center">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/half-star.svg" alt="media-estrella" width="25"
+                                    height="25">
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/person.svg" alt="persona" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Ana Valera, 38 años
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Mar del Plata, Buenos Aires, Argentina
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" id="perfil3" style="width: 190px;" href="perfil-sitter.html">
+                    <img src="images/profile-3.jpg" class="rounded-circle z-depth-3" id="imagenTres">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4">
+                        <div class="per3" style="width: max-content;">
+                            <div class="d-flex mb-4 justify-content-center align-items-center">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/half-star.svg" alt="media-estrella" width="25"
+                                    height="25">
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/person.svg" alt="persona" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Joaquín Fernandez, 23 años
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa width=" 25" height="25">
+                                <p class="mb-0 ms-3">
+                                    La Paz, Bolivia
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" id="perfil4" style="width: 190px;" href="perfil-sitter.html">
+                    <img src="images/profile-4.jpg" class="rounded-circle z-depth-3" id="imagenCuatro">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4">
+                        <div class="per4" style="width: max-content;">
+                            <div class="d-flex mb-4 justify-content-center align-items-center">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/person.svg" alt="persona" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    John McAllister, 45 años
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Sidney, Australia
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" id="perfil5" style="width: 190px;" href="perfil-sitter.html">
+                    <img src="images/profile-5.jpg" class="rounded-circle z-depth-3" id="imagenCinco">
+                    <div class="d-flex flex-column align-items-center raleway-normal mt-4">
+                        <div class="per5" style="width: max-content;">
+                            <div class="d-flex mb-4 justify-content-center align-items-center">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="estrella" width="25" height="25">
+                                <img class="m-1" src="images/icons/half-star.svg" alt="media-estrella" width="25"
+                                    height="25">
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/person.svg" alt="persona" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    Stella Dupain, 27 años
+                                </p>
+                            </div>
+                            <div class="d-flex mb-4 align-items-center">
+                                <img src="images/icons/map.svg" alt="globo-mapa" width="25" height="25">
+                                <p class="mb-0 ms-3">
+                                    París, Francia
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a class="waves-effect waves-light btn bg-primary bg-gradient text-center raleway-bold mb-5 borde"
+                    href="buscador.html">Explorar
+                    más cuidadores</a>
+            </div>
+        </section>
+
+        <section class="mt-5 raleway-normal container d-flex text-center" style="width: 950px;">
+            <article
+                class="bg-primary bg-gradient m-5 p-4 borde d-flex flex-column align-items-center justify-content-around z-depth-3"
+                style="width: 400px; height: 200px;">
+                <img src="images/icons/shield.svg" alt="escudo" width="50" height="50">
+                <p>Verificamos la identidad de todos los usuarios</p>
+            </article>
+            <article
+                class="bg-primary bg-gradient m-5 p-4 borde d-flex flex-column align-items-center justify-content-around z-depth-3"
+                style="width: 400px; height: 200px;">
+                <img src="images/icons/review.svg" alt="reseña" width="50" height="50">
+                <p> Total confianza, perfiles calificados, referencias y puntuaciones.</p>
+            </article>
+        </section>
+
+
+        <div class="bg-secondary bg-gradient row align-items-baseline p-3 m-0 mt-5" style="width: 100%;">
+            <div class="col-6 d-flex justify-content-between align-items-baseline pb-3">
+                <div>
+                    <p class="raleway-bold m-3">Contáctenos por mail</p>
+                </div>
+                <div>
+                    <form action="#" method="post" class="raleway-normal d-flex flex-column align-items-end">
+                        <div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Tu email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="textarea" rows="5" cols="50" class="form-control" placeholder="Mensaje"
+                                    style="height: max-content;"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light borde"
+                            data-toggle="button" aria-pressed="false" autocomplete="off">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-column align-items-center">
+                <p class="raleway-bold">Redes sociales</p>
+                <div class="d-flex justify-content-between m-3">
+                    <a href="https://www.instagram.com" target="_blank"><img class="mx-4 zoom"
+                            src="images/icons/instagram.svg" alt="instagram" width="30" height="30"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img class="mx-4 zoom"
+                            src="images/icons/twitter.svg" alt="twitter" width="30" height="30"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img class="mx-4 zoom"
+                            src="images/icons/facebook.png" alt="facebook" width="30" height="30"></a>
+                </div>
+                <div class="d-flex align-items-center m-3">
+                    <img src="images/icons/email.svg" alt="email" width="30" height="30">
+                    <a class="ms-2 raleway-normal text-decoration-underline email"
+                        href="mailto:beelocals@hotmail.com?Subject=Consulta%20sobre%20House-sitting">Beelocals@hotmail.com</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="row p-5 m-0 bg-primary bg-gradient" style="width: 100%;">
+        <div class="col mb-3">
+            <p class="raleway-bold">House-sitters</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra a un
+                        cuidador</a></li>
+                <li class="nav-item mb-2"><a href="registro-sitter.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Home-owners</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra una casa</a>
+                </li>
+                <li class="nav-item mb-2"><a href="registro.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Ayuda</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="como-funciona.html" class="nav-link p-0 text-dark">Cómo funciona</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Descubre más</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Opiniones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Experiencias</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3 d-flex flex-column align-items-start">
+            <p class="raleway-bold">Contáctenos</p>
+            <div class="d-flex justify-content-between">
+                <a href="https://www.instagram.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/instagram.svg" alt="instagram" width="30" height="30"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="me-4 zoom" src="images/icons/twitter.svg"
+                        alt="twitter" width="30" height="30"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/facebook.png" alt="facebook" width="30" height="30"></a>
+            </div>
+            <div class="d-flex align-items-center my-3">
+                <img src="images/icons/email.svg" alt="email" width="30" height="30">
+                <a class="ms-2 raleway-normal text-decoration-underline email"
+                    href="mailto:beelocals@hotmail.com?Subject=Consulta%20sobre%20House-sitting">Beelocals@hotmail.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
